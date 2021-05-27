@@ -1,4 +1,5 @@
 package leetcode_go
+
 func twoSum(nums []int, target int) []int {
 
 	m := make(map[int]int)
