@@ -6,7 +6,7 @@ func findDuplication(nums []int) int {
 	if len(nums) < 1 {
 		return -1
 	}
-	small := 0
+	small := 1
 	big := len(nums) - 1
 	dup := -1
 	for small < big {
@@ -15,12 +15,11 @@ func findDuplication(nums []int) int {
 		if count > (mid - small + 1) {
 			dup = mid
 			big = mid
+		} else {
+			dup = mid + 1
+			small = mid + 1
 		}
-		count = countRange(nums, mid, big)
-		if count > (big - mid + 1) {
-			dup = mid
-			small = mid
-		}
+
 	}
 	return dup
 }
@@ -34,6 +33,6 @@ func countRange(nums []int, small int, big int) (count int) {
 	return
 }
 func main() {
-	nums := []int{1, 2, 3, 4, 5, 3, 3, 7}
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 1}
 	print(findDuplication(nums))
 }
