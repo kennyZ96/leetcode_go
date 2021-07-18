@@ -33,6 +33,6 @@ func countRange(nums []int, small int, big int) (count int) {
 	return
 }
 func main() {
-	nums := []int{1, 2, 3, 4, 5, 6, 7, 1}
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 6, 5}
 	print(findDuplication(nums))
 }
