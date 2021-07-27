@@ -1,4 +1,4 @@
-package main
+package leetcode_go
 
 import (
 	"fmt"
@@ -80,7 +80,7 @@ func mergeList(headL *ListNode, headR *ListNode) *ListNode {
 	}
 	if headL != nil {
 		now.Next = headL
-	}else{
+	} else {
 		now.Next = headR
 	}
 	return head

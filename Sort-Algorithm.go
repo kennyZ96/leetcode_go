@@ -1,5 +1,5 @@
 //this package is used for kennyZ's review of sort algorithm
-package main
+package leetcode_go
 
 import "fmt"
 

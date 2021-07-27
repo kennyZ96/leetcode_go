@@ -1,7 +1,7 @@
 package leetcode_go
 
 //方法2，划分数组
-func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+func findMedianSortedArrays2(nums1 []int, nums2 []int) float64 {
 	// 假设 nums1 的长度小
 	if len(nums1) > len(nums2) {
 		return findMedianSortedArrays(nums2, nums1)

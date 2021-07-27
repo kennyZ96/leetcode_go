@@ -37,11 +37,3 @@ func getKthSmallest(nums1 []int, nums2 []int, k int) float64 {
 		}
 	}
 }
-
-func min(x int, y int) int {
-	if x < y {
-		return x
-	} else {
-		return y
-	}
-}
